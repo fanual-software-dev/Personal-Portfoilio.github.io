@@ -1,0 +1,404 @@
+
+.navbar{
+    position: fixed;
+    top: 0;
+    padding:10px;
+    margin-bottom: 10px;
+    background-color: rgb(3, 3, 5);
+    z-index: 1000;
+}
+
+
+.navbar img{
+    border-radius: 50%;
+}
+.nav{
+    width: 50%;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    font-family: monospace;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: rgb(255, 183, 2);
+}
+
+.circle{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background-color: rgba(255, 0, 76, 0.026);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: none;
+}
+
+.home{
+    position: relative;
+    height: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap: 35px;
+    
+}
+
+.p span{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.p{
+    font-size: 24px;
+    font-family: monospace;
+
+}
+
+.circle2{
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 208, 0, 0.026);
+
+}
+
+.circle3{
+    position: absolute;
+    right:0;
+    top: 10%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(2, 247, 55, 0.026);
+}
+
+.about{
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.about-p{
+    font-size: 30px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.about-text{
+    width: 80%;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+.about-skills{
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row: 4;
+    list-style: none;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 40px;
+}
+
+.ul .li{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+    height: auto;
+    font-family: monospace;
+    font-weight: bold;
+    
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    padding: 20px;
+    /* justify-content: center; */
+}
+
+#projects{
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-text{
+    font-size: 30px;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.fieldset{
+    background-color: rgba(162, 231, 231, 0.834);
+    width: 60%;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group-contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.form-text{
+    font-size: 34px;
+    color: rgb(5, 47, 87);
+    font-family: monospace;
+    font-weight: bold;
+}
+
+input{
+    width: 90%;
+    height: 40px;
+    padding:20px;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 90%;
+    height: 60px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:450px) {
+    *{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        padding: 0px;
+    }
+    .navbar img{
+        display: none;
+    }
+    .nav{
+        width: 100%;
+        justify-content: center;
+        gap: 0;
+        margin: 0;
+    }
+
+    .nav-link{
+        font-size: 12px;
+    }
+
+    .circle3{
+        display: none;
+    }
+
+    .circle{
+        top: 35%;
+        left: 0;
+        width: 250px;
+        height: 250px;
+        background-color: rgba(255, 0, 76, 0.026);
+    }
+
+    .circle2{
+        width: 250px;
+        height: 250px;
+        top: 50%;
+        background-color: rgba(0, 255, 170, 0.026);
+    }
+
+    .home{
+        flex-direction: column;
+        height: auto;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .home img{
+        width: 100%;
+        height: 250px;
+        
+    }
+
+    .p span{
+        font-size: 20px;
+    }
+
+    .p{
+        width: 100%;
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
+        
+        
+    }
+
+    .about{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+
+    /* .about-p{
+        font-size: 20px;
+    } */
+
+    .about-text{
+        width: 100%;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .ul{
+        grid-template-columns: auto auto auto;
+        gap: 15px;
+        grid-row: 4;
+
+        
+
+        
+    }
+
+    .ul .li{
+        font-size: 12px;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .ul .li img{
+        width: 12px;
+        height: 12px;
+    
+    }
+
+    .projects{
+        display: grid;
+        grid-template-columns: auto;
+        grid-row: 6;
+        row-gap: 25px;
+        padding: 5px;
+        /* justify-content: center; */
+    }
+
+    .card-text{
+        font-size: 12px;
+        font-family: monospace;
+    }
+
+    .fieldset{
+        width:99%;
+    }
+}
+
+
+@media screen and (min-width:450px) and (max-width:690px){
+
+    *{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar{
+        width: 100%;
+        display: flex;
+        padding: 0px;
+        justify-content: center;
+    }
+    .navbar img{
+        display: none;
+    }
+    .nav{
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        
+    }
+
+    .nav-link{
+        font-size: 12px;
+    }
+
+    .home{
+        overflow: hidden;
+        gap: 10px;
+    }
+    .home img{
+        width: 50%;
+        height: 300px;
+    }
+    .p{
+        font-size: 16px;
+    }
+    .p span{
+        font-size: 18px;
+    }
+
+    .fieldset{
+        width: 80%;
+    }
+
+    .projects{
+        grid-template-columns: auto auto;
+    }
+
+}
+
+
+@media screen and (min-width:690px) and (max-width:1000px) {
+
+    .nav{
+        width: 60%;
+        justify-content: center;
+        gap: 0;
+        margin: 0;
+    }
+
+    .projects{
+        grid-template-columns: auto auto;
+    }
+
+    .home-img{
+        width: 400px;
+        height: 400px;
+    }
+    
+}
